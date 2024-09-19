@@ -1,0 +1,22 @@
+# Mac OS generelle systemfiler
+.DS_Store
+
+# Python-virtualenv eller conda environment
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Byte-compiled Python-filer
+*.pyo
+*.pyd
+
+# Coverage rapporter
+htmlcov/
+.coverage
+
+# Jupyter notatbok checkpoints
+.ipynb_checkpoints
+
+# Installerte pakker og avhengigheter
+node_modules/

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Project</title>
+    <link rel="stylesheet" type="text/css" href="CSS/style_1.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+        <h1>My personal information</h1>
+        <button id="menuToggle" aria-label="Toggle Menu">☰</button>
+        <nav id="menu">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>  
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cv">CV</a></li>
+            </ul>
+        </nav>
+        </header>
+        <section id="home" class="section-content">
+            <div class="content-section">
+                <h2>Welcome to My Personal Website</h2>
+                <article>
+                    <p>Hello! My name is Steffen Nordnes, and I'm a second-year Computer Engineering student with a focus on data science. Here you can find more information about my background, projects I've worked on, and how to get in touch with me.</p>
+                </article>        
+            </div>
+        </section>
+        <section id="about-me" class="section-content">
+            <div class="content-section">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <article>
+                        <p>I am a highly motivated and detail-oriented student studying Computer Engineering (Data Science) at UiT – The Arctic University of Norway. I have experience in Python programming, web development, and data analysis. I'm always eager to learn new technologies and take on new challenges.</p>
+                        <p>Education:</p>
+                        <ul>
+                            <li><strong>UiT – The Arctic University of Norway</strong>, Computer Engineering (Data Science), 2nd Year (expected graduation: 2026)</li>
+                        </ul>
+                        <img src="{{ url_for('static', filename='Images/uit-segl-eng-sort-960px.webp') }}" alt="UiT Logo" class="uit-logo">
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section id="projects" class="section-content">
+            <div class="content-section">
+                <h2>Projects</h2>
+                <article>
+                    <h3>1. Personal Website</h3>
+                    <p>This website serves as a personal portfolio where I showcase my work, skills, and accomplishments.</p>
+                    <p>Technologies used: HTML, CSS, Flask, Python</p>
+                    <a href="https://github.com/yourgithub/personal-website" target="_blank">View on GitHub</a>
+              
+                    <h3>2. Blog Platform</h3>
+                    <p>A simple blog platform that allows users to create and manage blog posts, built using Flask.</p>
+                    <p>Technologies used: Flask, SQL, HTML, CSS</p>
+                    <a href="https://github.com/yourgithub/blog-platform" target="_blank">View on GitHub</a>
+                </article>
+            </div>
+        </section>
+        <section id="contact" class="section-content">
+            <div class="content-section">
+                <h2>Contact Me</h2>
+                <article>
+                    <p>I'm always open to discussing potential projects or job opportunities. Feel free to reach out to me via the following:</p>
+                    <ul>
+                        <li>Email: <a href="mailto:Steffen.Nordnes@hotmail.com">Steffen.Nordnes@hotmail.com</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/steffen-nordnes-590625327/" target="_blank">LinkedIn Profile</a></li>
+                        <li>GitHub: <a href="https://github.com/yourgithub" target="_blank">GitHub Profile</a></li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+        <section id="cv" class="section-content">
+            <div class="content-section">
+                <h2>My CV</h2>
+                <article>
+                    <p>Click the button below to download a PDF version of my CV:</p>
+                    <a href="static/docs/Steffen-Nordnes-CV.pdf" class="btn btn-primary" download>Download CV</a>
+                </article>
+            </div>
+        </section>
+    </div>
+    <script src="{{ url_for('static', filename='JavaScript/java.js') }}"></script>
+    <script src="{{ url_for('static', filename='JavaScript/java.js') }}"></script>
+</body>
+<footer>
+    <p>&copy; 2024 Steffen Nordnes. Alle rettigheter reservert</p>
+</footer>
+</html>

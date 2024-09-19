@@ -1,0 +1,136 @@
+/* Generelle stiler */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Flexbox layout for the 'About Me' section */
+.about-content {
+    display: flex;
+    align-items: flex-start; /* Juster bildet med toppen av teksten */
+    gap: 20px; /* Avstand mellom teksten og bildet */
+}
+
+.about-content img.uit-logo {
+    width: 150px !important;  /* Tvinger bredde til 150px */
+    height: auto !important;
+}
+
+
+
+
+
+header {
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    color: #333;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Generell styling for menyen */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Skjuler menyen på små skjermer og viser hamburgerknappen */
+#menu {
+    display: none; /* Menyen er skjult på små skjermer */
+}
+
+#menuToggle {
+    display: block; /* Viser hamburgerknappen */
+    background: none;
+    border: none;
+    font-size: 2rem;
+}
+
+/* Når skjermen er stor nok (over 768px), viser vi menyen */
+@media (min-width: 768px) {
+    #menu {
+        display: block; /* Viser menyen på større skjermer */
+    }
+    #menuToggle {
+        display: none; /* Skjuler hamburgerknappen på større skjermer */
+    }
+}
+
+/* Seksjonsstiler */
+.section-content {
+    margin: 20px 0;
+}
+
+.content-section h2 {
+    color: #333;
+}
+
+.content-section h3 {
+    color: #666;
+}
+
+.content-section p {
+    line-height: 1.6;
+}
+
+/* Fotterstiler */
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.8em;
+}
+
+footer p {
+    margin: 0;
+    color: #666;
+}
+
+/* Responsiv design med Media Queries */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    footer {
+        position: relative;
+    }
+}
